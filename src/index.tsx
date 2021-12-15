@@ -132,7 +132,7 @@ const CodeCell = ({ cell, ...props }: {
 }
 
 interface MarkdownProps {
-  source: string
+  children : string
 }
 
 interface NbViewerProps {
