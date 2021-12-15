@@ -165,7 +165,7 @@ export default function NbViewer({
           <div className="inner_cell">{
             // Not using JSX here because "markdown" is in lower case
             React.createElement(markdown, {
-              source: cell.source.join(''),
+              children: cell.source.join(''),
               key: i
             }, null)
           }</div>
@@ -176,7 +176,7 @@ export default function NbViewer({
 
 // Defaults when not provided
 function PlainMarkdown(props: MarkdownProps) {
-  return <div>{props.source}</div>
+  return <div>{props.children}</div>
 }
 
 function PlainCode(props: CodeComponentProps) {
